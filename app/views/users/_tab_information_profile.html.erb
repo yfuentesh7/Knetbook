@@ -1,0 +1,81 @@
+<div id="tab-information-profile" class="col s12">
+  <%= form_for current_user, url: user_path(current_user), method: :put, :html => { :multipart => true } do |f| %>
+
+      <div class="row">
+
+        <div class="field">
+          <label class="label" for="user_name"><%= t('user-name') %>:</label>
+          <%= f.text_field :name, value: current_user.name %>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="field">
+        <label class="label" for="last_name"><%= t('last-name') %>:</label>
+        <%= f.text_field :last_name, value: current_user.last_name %>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+        <label class="label" for="user_email"><%= t('user-email') %>:</label>
+        <%= f.email_field :email, value: current_user.email %>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+        <label class="label" for="user_birthday"><%= t('birthday') %>:</label>
+        <%= f.date_field :birthday, value: current_user.birthday, class: 'datepicker' %>
+          </div>
+      </div>
+
+
+      <div class="row">
+        <div class="field">
+        <label class="label" for="user_phone"><%= t('phone') %>:</label>
+        <%= f.text_field :phone, value: current_user.phone %>
+          </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+        <label class="label" for="user_country"><%= t('country') %>:</label>
+        <%= f.text_field :country, value: current_user.country %>
+          </div>
+      </div>
+
+      <div class="row">
+        <label class="label"><%= t('avatar') %>:</label>
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>File</span>
+            <%= f.file_field :avatar %>
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <label class="label"><%= t('header') %>:</label>
+        <div class="file-field">
+          <div class="btn">
+            <span>File</span>
+
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <%= f.submit t('update'), class: 'waves-effect waves-light btn btn-public' %>
+      </div>
+
+      <% end %>
+
+</div>
