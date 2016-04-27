@@ -1,0 +1,26 @@
+<div id="tab-information" class="col s12">
+  <% if @user.birthday %>
+      <div class="row">
+        <label class="label"><%= t('birthday') %>:</label>
+        <span class="property"><%= @user.birthday %></span>
+      </div>
+  <% end %>
+  <% if @user.phone %>
+      <div class="row">
+        <label class="label"><%= t('phone') %>:</label>
+        <span class="property"><%= @user.phone %></span>
+      </div>
+  <% end %>
+  <% if @user.male %>
+      <div class="row">
+        <label class="label"><%= t('gender') %>:</label>
+        <span class="property"><%= @user.male==true ? t('male') : t('female') %></span>
+      </div>
+  <% end %>
+  <% if @user.country %>
+      <div class="row">
+        <label class="label"><%= t('country') %>:</label>
+        <span class="property"><%= @user.country %></span>
+      </div>
+  <% end %>
+</div>
