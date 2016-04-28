@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col s4 offset-s4">
+    <h2 class="header"><%= t('edit') %> <%= resource_name.to_s.humanize %></h2>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="field input-field">
+        <label class="" for="user_email"><%= t('user-email') %></label>
+        <%= f.email_field :email %>
+      </div>
+
+        <div class="field input-field">
+          <label class="" for="user_current_password"><%= t('user-current-password') %></label>
+          <%= f.password_field :current_password, autocomplete: "off" %>
+          <i class="characters-minimum"><%= t('need-your-current-password') %></i>
+        </div>
+
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <div><%= t('currently-waiting-confirmation-for') %> <%= resource.unconfirmed_email %></div>
+      <% end %>
+
+      <div class="field input-field">
+        <label class="" for="user_password"><%= t('user-pass') %></label>
+        <%= f.password_field :password, autocomplete: "off" %>
+        <i class="characters-minimum"><%= t('leave-blank-if-you-want-change') %></i>
+      </div>
+
+      <div class="field input-field">
+        <label class="" for="user_password_confirmation"><%= t('user-pass-confirm') %></label>
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit t('update'), class: 'waves-effect waves-light btn' %>
+      </div>
+    <% end %>
+
+    <h3 class="header"><%= t('cancel-account') %></h3>
+
+  </div>
+</div>
+<div class="row">
+  <div class="col s4 offset-s4">
+    <div class="row">
+      <div class="col s12">
+        <p><%= t('unhappy') %></p>
+      </div>
+      <div class="col s6">
+        <%= button_to t('cancel-account'), registration_path(resource_name), data: { confirm: t('are-you-sure') }, method: :delete, class: 'waves-effect waves-light btn' %>
+      </div>
+      <div class="col s6">
+        <%= link_to t('back'), :back , class: 'waves-effect waves-light btn btn-back' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

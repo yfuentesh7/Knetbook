@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col s4 offset-s4">
+    <h2 class="header"><%= t('confirmation-instructions') %></h2>
+
+    <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="field input-field">
+        <label class="" for="user_email"><%= t('user-email') %></label>
+        <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email) %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit t('confirmation-instructions'), class: 'waves-effect waves-light btn' %>
+      </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+
+  </div>
+</div>

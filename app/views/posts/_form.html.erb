@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col s4 offset-s4">
+
+    <%= form_for(@post) do |f| %>
+      <% if @post.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+          <ul>
+          <% @post.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3"><a class="active" href="#tab-post"><%= t('information') %></a></li>
+            <li class="tab col s3"><a href="#tab-image"><%= t('post') %></a></li>
+          </ul>
+        </div>
+        <div id="tab-post" class="col s12">
+          <div class="field">
+            <%= f.label :user_id, class: "hidden" %><br>
+            <%= f.number_field :user_id, value: current_user.id, class: "hidden" %>
+          </div>
+          <div class="row">
+            <div class="col s2">
+              <%= image_tag current_user.avatar.url(:medium), class:"avatar-post" %>
+            </div>
+            <div class="col s10">
+              <div class="field input-field">
+                <label for="post_content"><%= t('information') %></label>
+                <%= f.text_area :content, class:"materialize-textarea" %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab-image" class="col s12">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>File</span>
+              <%= f.file_field :avatar %>
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <%= f.submit 'Publish', class: 'waves-effect waves-light btn btn-public' %>
+        </div>
+
+    <% end %>
+
+  </div>
+</div>
+
+
+

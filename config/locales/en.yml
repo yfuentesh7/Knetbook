@@ -1,0 +1,82 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  hello: "Hello world"
+  knetbook: "KnetBook"
+  user-email: "User Email"
+  user-pass: "User Password"
+  user-remember-me: "Remember me"
+  user-pass-confirm: "Password Confirmation"
+  reset-password-instructions: "Send me reset password instructions"
+  new-password: "New password"
+  characters-minimum: "characters minimum"
+  change-password: "Change my password"
+  sign-up: "Sign up"
+  log-in: "Log in"
+  log-out: "Log out"
+  forgot-your-password: "Forgot your password?"
+  confirmation-instructions: "Didn't receive confirmation instructions?"
+  unlock-instructions: "Didn't receive unlock instructions?"
+  sign-in-with: "Sign in with"
+  confirmation-instructions: "Resend confirmation instructions"
+  you-can-confirm-your-account-email-through-the-link-below: "You can confirm your account email through the link below:"
+  confirm-my-account: "Confirm my account"
+  welcome: "Welcome"
+  hello: "Hello"
+  contacting-you-to-notify-you-that-your-password-has-been-changed: "We're contacting you to notify you that your password has been changed."
+  someone-has-requested-link-change-password: "Someone has requested a link to change your password. You can do this through the link below."
+  please-ignore-this-email: "If you didn't request this, please ignore this email."
+  password-change-until-access: "Your password won't change until you access the link above and create a new one."
+  account-has-been-locked: "Your account has been locked due to an excessive number of unsuccessful sign in attempts."
+  link-below-unlock: "Click the link below to unlock your account:"
+  unlock-account: "Unlock my account"
+  change-password: "Change your password"
+  forgot-password: "Forgot your password?"
+  edit: "Edit"
+  currently-waiting-confirmation-for: "Currently waiting confirmation for:"
+  leave-blank-if-you-want-change: "(leave blank if you don't want to change it)"
+  user-current-password: "Current password"
+  need-your-current-password: "(we need your current password to confirm your changes)"
+  update: "Update"
+  cancel-account: "Cancel my account"
+  unhappy: "Unhappy?"
+  are-you-sure: "Are you sure?"
+  back: "Back"
+  resend-unlock-instructions: "Resend unlock instructions"
+  user-name: "User Name"
+  last-name: "Last Name"
+  information: "Information"
+  friends: "Friends"
+  publications: "Publications"
+  birthday: "Birthday"
+  phone: "Phone"
+  male: "Male"
+  female: "Female"
+  gender: "Gender"
+  country: "Country"
+  label-publication: "Information"
+  post: "Post"
+  profile: "Profile"
+  avatar: "Avatar"
+  header: "Header"
+  wal: "Wall"
+

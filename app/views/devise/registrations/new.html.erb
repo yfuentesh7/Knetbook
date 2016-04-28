@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col s4 offset-s4">
+    <h2 class="header"><%= t('log-in') %></h2>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+
+       <div class="field input-field">
+          <label class="" for="user_name"><%= t('user-name') %></label>
+          <%= f.text_field :name %>
+       </div>
+
+        <div class="field input-field">
+          <label class="" for="user_last_name"><%= t('last-name') %></label>
+          <%= f.text_field :last_name %>
+        </div>
+
+      <div class="field input-field">
+        <label class="" for="user_email"><%= t('user-email') %></label>
+        <%= f.email_field :email %>
+      </div>
+
+      <div class="field input-field">
+        <label class="" for="user_password"><%= t('user-pass') %></label>
+        <%= f.password_field :password, autocomplete: "off", class: "validate" %>
+        <% if @minimum_password_length %>
+            <em id="characters-minimum">(<%= @minimum_password_length %> characters minimum)</em>
+        <% end %><br />
+      </div>
+
+      <div class="field input-field">
+        <label class="" for="user_password_confirmation"><%= t('user-pass-confirm') %></label>
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit t('sign-up'), class: 'waves-effect waves-light btn' %>
+      </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+  </div>
+</div>

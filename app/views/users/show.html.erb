@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col s6 offset-s3 coverBorder" style="background: url(<%= @user.header.url(:medium) %>) no-repeat scroll center center / cover rgba(0,0,0,0)">
+    <div>
+      <%= image_tag @user.avatar.url(:medium), class: "avatar-profile" %>
+      <label class="title-profile"><%= @user.name + " " + @user.last_name %></label>
+    </div>
+  </div>
+  <div class="col s6 offset-s3">
+    <div class="row">
+      <div class="col s12">
+        <ul class="tabs">
+          <% if @user.birthday || @user.phone || @user.male || @user.country %>
+            <li class="tab col s3"><a class="active" href="#tab-information"><%= t('information') %></a></li>
+          <% end  %>
+          <% if @user.posts.length != 0 %>
+            <li class="tab col s3"><a href="#tab-publications"><%= t('publications') %></a></li>
+          <% end  %>
+        </ul>
+      </div>
+
+      <% if @user.birthday || @user.phone || @user.male || @user.country %>
+          <%= render 'tab_information' %>
+      <% end %>
+
+      <% if @user.posts.length != 0 %>
+          <%= render 'users/tab_publications_profile' %>
+      <% end %>
+    </div>
+  </div>
+</div>

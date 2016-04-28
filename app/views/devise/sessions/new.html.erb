@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col s4 offset-s4">
+    <h2 class="header"><%= t('log-in') %></h2>
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field input-field">
+          <label class="" for="user_email"><%= t('user-email') %></label>
+          <%= f.email_field :email %>
+        </div>
+
+        <div class="field input-field">
+          <label class="" for="user_password"><%= t('user-pass') %></label>
+          <%= f.password_field :password, autocomplete: "off", class: "validate" %>
+        </div>
+
+        <% if devise_mapping.rememberable? -%>
+            <div class="field input-field">
+              <%= f.check_box :remember_me %>
+              <label class="" for="user_remember_me"><%= t('user-remember-me') %></label>
+            </div>
+        <% end -%>
+
+        <div class="actions input-field">
+          <%= f.submit t('sign-up'), class: 'waves-effect waves-light btn' %>
+        </div>
+    <% end %>
+
+    <%= render "devise/shared/links" %>
+  </div>
+</div>
+

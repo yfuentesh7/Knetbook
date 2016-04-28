@@ -1,0 +1,29 @@
+<nav>
+  <div class="nav-wrapper">
+    <a class="brand-logo"><%= t('knetbook') %></a>
+    <% if user_signed_in? %>
+    <ul class="right hide-on-med-and-down">
+      <li>
+        <form>
+          <div class="field input-field">
+            <input id="search" type="search" required>
+            <i class="material-icons icon-close">close</i>
+            <label id="label-for-search" for="search"><i class="material-icons">search</i></label>
+          </div>
+        </form>
+      </li>
+      <li><%= link_to t('wal'), root_path, method: :get %></li>
+      <li>
+        <a class="dropdown-button" data-activates="dropdown1">
+          <%= image_tag current_user.avatar.url(:medium), class:"avatar-nav" %>
+          <!--<i class="material-icons">more_vert</i>-->
+        </a>
+      </li>
+    </ul>
+    <% end %>
+  </div>
+</nav>
+<ul id="dropdown1" class="dropdown-content">
+  <li><%= link_to t('profile'), user_profile_path, method: :get %></li>
+  <li><%= link_to t('log-out'), destroy_user_session_path, method: :delete %></li>
+</ul>
