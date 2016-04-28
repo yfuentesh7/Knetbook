@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col s8 offset-s2">
+    <div id="tab-publications" class="col s12">
+      <% user.posts.each do |post| %>
+          <div class="row">
+            <div class="card">
+              <% if post.avatar %>
+                  <div class="card-image">
+                    <%= image_tag post.avatar(:medium), class: "avatar-profile" %>
+                    <span class="card-title"><%= post.user.name %></span>
+                  </div>
+              <% end %>
+              <div class="card-content">
+                <%= post.content %>
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div></div>
