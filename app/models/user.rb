@@ -15,4 +15,7 @@ class User < ActiveRecord::Base
   validates_attachment_content_type :header, :content_type => /\Aimage\/.*\Z/
 
   acts_as_liker
+  has_many :friendships
+  has_many :friends, :through => :friendships,
+           :source => :friend
 end

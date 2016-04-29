@@ -13,10 +13,11 @@ class UsersController < ApplicationController
   end
 
   def update
+    @users = User.all
     respond_to do |format|
       if current_user.update(post_params)
-        format.html { render :index }
-        format.json { render :index }
+        format.html { render :'users/profile' }
+        format.json { render :'users/profile' }
       else
         format.html { render :index }
         format.json { render json: current_user.errors, status: :unprocessable_entity }
