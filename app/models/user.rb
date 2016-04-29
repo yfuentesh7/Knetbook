@@ -13,4 +13,6 @@ class User < ActiveRecord::Base
 
   has_attached_file :header, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => ActionController::Base.helpers.asset_path('missing.png')
   validates_attachment_content_type :header, :content_type => /\Aimage\/.*\Z/
+
+  acts_as_liker
 end

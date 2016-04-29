@@ -14,12 +14,10 @@
 
         <div class="col s12">
           <div class="field">
-            <%= f.label :user_id, class: "hidden" %><br>
-            <%= f.number_field :user_id, value: current_user.id, class: "hidden" %>
+            <%= f.number_field :user_id, value: current_user.id, class: "hidden", id: "comment_user_id_" + post.id.to_s %>
           </div>
           <div class="field">
-            <%= f.label :post_id, class: "hidden" %><br>
-            <%= f.number_field :post_id, value: post.id, class: "hidden" %>
+            <%= f.number_field :post_id, value: post.id, class: "hidden", id: "comment_post_id_" + post.id.to_s %>
           </div>
           <div class="row">
             <div class="col s2">
@@ -27,8 +25,8 @@
             </div>
             <div class="col s10">
               <div class="field input-field">
-                <label for="post_content"><%= t('information') %></label>
-                <%= f.text_field :content, class:"materialize-textarea" %>
+                <label for="comment_content_<%= post.id %>"><%= t('information') %></label>
+                <%= f.text_field :content, class:"materialize-textarea", id: "comment_content_" + post.id.to_s %>
               </div>
             </div>
           </div>

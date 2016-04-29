@@ -61,6 +61,24 @@ class PostsController < ApplicationController
     end
   end
 
+  def toggle_like
+    post = Post.find(params[:id])
+    @liked = false;
+    if current_user.likes?(post)
+      post.likers_count = post.likers_count - 1
+      @liked = false;
+    else
+      post.likers_count = post.likers_count + 1
+      @liked = true;
+    end
+    current_user.toggle_like!(post)
+    @likes = post.likers_count
+    @pos_id = post.id
+    respond_to do |format|
+      format.js { render :layout=>false }
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post

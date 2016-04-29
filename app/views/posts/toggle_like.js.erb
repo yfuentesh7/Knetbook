@@ -1,0 +1,6 @@
+$("#likes-<%= @pos_id %>").html(<%= @likes %>);
+<% if @liked %>
+    $("#hand-icon-<%= @pos_id %>").text('thumb_up');
+<% else %>
+    $("#hand-icon-<%= @pos_id %>").text('thumb_down');
+<% end %>

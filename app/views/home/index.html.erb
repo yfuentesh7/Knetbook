@@ -25,10 +25,10 @@
             <% end %>
             <div class="card-action">
               <label><%= post.comments.length %> comment</label>
-              <label>0 likes</label>
-              <a class="right">
-                <i class="material-icons">thumb_up</i>
-              </a>
+              <label id="likes-<%= post.id %>"><%= post.likers_count %></label><span class="icon-color-grey"> likes</span>
+              <%= link_to post_toggle_like_path(post), :method => :post, :class => "right", :remote => true do %>
+                    <i id="hand-icon-<%= post.id %>" class="material-icons"><% if current_user.likes?(post) %>thumb_up<% else %>thumb_down<% end %></i>
+              <% end %>
             </div>
 
             <div class="card-action">

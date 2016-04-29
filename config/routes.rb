@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post 'posts/:id/toggle_like' => 'posts#toggle_like', as: :post_toggle_like
   resources :posts
   resources :comments
   get 'user/profile' => 'users#profile', as: :user_profile
