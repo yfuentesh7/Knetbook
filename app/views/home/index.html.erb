@@ -29,12 +29,20 @@
               <%= link_to post_toggle_like_path(post), :method => :post, :class => "right", :remote => true do %>
                     <i id="hand-icon-<%= post.id %>" class="material-icons"><% if current_user.likes?(post) %>thumb_up<% else %>thumb_down<% end %></i>
               <% end %>
+              <% if current_user.id == post.user.id %>
+                  <%= link_to post, :method => :delete, :class => "right", data: { confirm: 'Are you sure?' } do %>
+                      <i class="material-icons red-text">delete</i>
+                  <% end %>
+              <% end %>
             </div>
 
             <div class="card-action">
               <%= render 'comments/form', :post => post %>
             </div>
             <% if post.comments.length > 0 %>
+                <div class="card-action indigo white-text">
+                  <%= t("Comments") %>
+                </div>
                 <div class="card-action">
                   <% post.comments.each do |comment| %>
                       <div class="row">
@@ -47,6 +55,11 @@
                         <div class="col s10">
                           <%= comment.content %>
                         </div>
+                        <% if current_user.id == comment.user.id %>
+                            <%= link_to comment, :method => :delete, :class => "right right-comment", data: { confirm: 'Are you sure?' } do %>
+                                <i class="material-icons red-text">delete</i>
+                            <% end %>
+                        <% end %>
                       </div>
                   <% end %>
                 </div>

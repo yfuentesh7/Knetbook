@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  before_action :set_comment, only: [:destroy]
 
   # POST /comments
   # POST /comments.json
@@ -16,9 +17,21 @@ class CommentsController < ApplicationController
     end
   end
 
+  def destroy
+    @comment.destroy
+    respond_to do |format|
+      format.html { redirect_to root_url, notice: 'Post was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
   private
   # Never trust parameters from the scary internet, only allow the white list through.
   def post_params
     params.require(:comment).permit(:user_id, :post_id, :content)
+  end
+
+  def set_comment
+    @comment = Comment.find(params[:id])
   end
 end
