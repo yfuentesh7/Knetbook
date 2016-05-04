@@ -1,20 +1,161 @@
 <div class="row">
   <div class="col s6 offset-s3">
-     <% @users.each do |user| %>
 
-          <div class="card">
-            <div class="card-content">
-              <div class="row">
+    <% if current_user.receiver.length > 0 %>
+        <div>
+          Invitations received
+        </div>
+        <% current_user.receiver.each do |receive| %>
+            <div class="card">
+              <div class="card-panel">
+                <div class="row">
                   <div class="col s2">
-                    <%= image_tag current_user.avatar.url(:medium), class: "avatar-profile-avatar" %>
+                    <%= image_tag receive.avatar.url(:medium), class: "avatar-profile-avatar" %>
                   </div>
-                  <div class="col s10">
-                    <%= user.name %>
+                  <div class="col s6">
+                    <div class="row">
+                      <div class="col s12">
+                        <%= receive.name + " " + receive.last_name %>
+                      </div>
+                      <div class="col s12">
+                        <%= receive.email %>
+                      </div>
+                      <div class="col s12">
+                        <%= receive.phone %>
+                      </div>
+                      <div class="col s12">
+                        <%= receive.country %>
+                      </div>
+                    </div>
                   </div>
+                  <div class="col s4" id="buttom-receiver-<%= receive.id %>">
+                     <%= link_to t('accept'), friendships_accept_path(receive.id), :remote => true, :method => :post %>
+                     <%= link_to t('cancel'), friendships_cancel_path(receive.id), :remote => true, :method => :post %>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-     <% end %>
+        <% end %>
+    <% end %>
+
+
+    <% if current_user.request.length > 0 %>
+        <div>
+          Invitations sends
+        </div>
+        <% current_user.request.each do |sends| %>
+            <div class="card">
+              <div class="card-panel">
+                <div class="row">
+                  <div class="col s2">
+                    <%= image_tag sends.avatar.url(:medium), class: "avatar-profile-avatar" %>
+                  </div>
+                  <div class="col s6">
+                    <div class="row">
+                      <div class="col s12">
+                        <%= sends.name + " " + sends.last_name %>
+                      </div>
+                      <div class="col s12">
+                        <%= sends.email %>
+                      </div>
+                      <div class="col s12">
+                        <%= sends.phone %>
+                      </div>
+                      <div class="col s12">
+                        <%= sends.country %>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s4" id="buttom-container-<%= sends.id %>">
+                    <%= t('waiting') %>
+                    <%= link_to t('cancel'), friendships_cancel_path(sends.id), :remote => true, :method => :post %>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <% end %>
+    <% end %>
+
+
+    <% if current_user.friends.length > 0 %>
+        <div>
+          Friends
+        </div>
+        <% current_user.friends.each do |friends| %>
+            <div class="card">
+              <div class="card-panel">
+                <div class="row">
+                  <div class="col s2">
+                    <%= image_tag friends.avatar.url(:medium), class: "avatar-profile-avatar" %>
+                  </div>
+                  <div class="col s6">
+                    <div class="row">
+                      <div class="col s12">
+                        <%= friends.name + " " + friends.last_name %>
+                      </div>
+                      <div class="col s12">
+                        <%= friends.email %>
+                      </div>
+                      <div class="col s12">
+                        <%= friends.phone %>
+                      </div>
+                      <div class="col s12">
+                        <%= friends.country %>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s4" id="buttom-container-friends-<%= friends.id %>">
+                    <%= t('friends') %>
+                    <%= link_to t('cancel'), friendships_cancel_path(friends.id), :remote => true, :method => :post %>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <% end %>
+    <% end %>
+
+
+    <% first = true %>
+    <% if @users.length > 0 %>
+        <% @users.each do |user| %>
+            <% if current_user.id != user.id %>
+                <% if first %>
+                    <div>
+                      Users
+                    </div>
+                <% end %>
+                <div class="card">
+                  <div class="card-panel">
+                    <div class="row">
+                      <div class="col s2">
+                        <%= image_tag user.avatar.url(:medium), class: "avatar-profile-avatar" %>
+                      </div>
+                      <div class="col s6">
+                        <div class="row">
+                          <div class="col s12">
+                            <%= user.name + " " + user.last_name %>
+                          </div>
+                          <div class="col s12">
+                            <%= user.email %>
+                          </div>
+                          <div class="col s12">
+                            <%= user.phone %>
+                          </div>
+                          <div class="col s12">
+                            <%= user.country %>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s4" id="buttom-add-<%= user.id %>">
+                        <%= link_to t('add-friends'), friendships_add_path(user.id), :remote => true, :method => :post %>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <% first = false %>
+            <% end %>
+        <% end %>
+    <% end %>
+
   </div>
 </div>
-

@@ -6,7 +6,7 @@
           <label class="title-profile"><%= current_user.name + " " + current_user.last_name %></label>
         </div>
       </div>
-      <div class="col s6 offset-s3">
+      <div class="col s6 offset-s3 white">
         <div class="row">
           <div class="col s12">
             <ul class="tabs">
@@ -19,7 +19,40 @@
 
           <%= render 'tab_information_profile' %>
 
-          <div id="tab-friends-profile" class="col s12"></div>
+          <div id="tab-friends-profile" class="col s12">
+            <% if current_user.friends.length > 0 %>
+                <% current_user.friends.each do |friends| %>
+                    <div class="card" id="buttom-profile-friends-<%= friends.id %>">
+                      <div class="card-panel">
+                        <div class="row">
+                          <div class="col s2">
+                            <%= image_tag friends.avatar.url(:medium), class: "avatar-profile-avatar" %>
+                          </div>
+                          <div class="col s6">
+                            <div class="row">
+                              <div class="col s12">
+                                <%= friends.name + " " + friends.last_name %>
+                              </div>
+                              <div class="col s12">
+                                <%= friends.email %>
+                              </div>
+                              <div class="col s12">
+                                <%= friends.phone %>
+                              </div>
+                              <div class="col s12">
+                                <%= friends.country %>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col s4">
+                            <%= link_to t('cancel'), friendships_cancel_path(friends.id), :remote => true, :method => :post %>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                <% end %>
+            <% end %>
+          </div>
 
           <%= render 'tab_publications_profile' %>
 

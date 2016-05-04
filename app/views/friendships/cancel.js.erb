@@ -1,0 +1,13 @@
+$("#buttom-receiver-<%= @user.id %>").children().remove();
+
+$("#buttom-receiver-<%= @user.id %>").html("<%= j (link_to t('add-friends'), friendships_add_path(@user.id), :remote => true, :method => :post) %>");
+$("#buttom-receiver-<%= @user.id %>").attr("id", "buttom-add-<%= @user.id %>");
+
+
+$("#buttom-container-<%= @user.id %>").html("<%= j (link_to t('add-friends'), friendships_add_path(@user.id), :remote => true, :method => :post) %>");
+$("#buttom-container-<%= @user.id %>").attr("id", "buttom-add-<%= @user.id %>");
+
+$("#buttom-container-friends-<%= @user.id %>").html("<%= j (link_to t('add-friends'), friendships_add_path(@user.id), :remote => true, :method => :post) %>");
+$("#buttom-container-friends-<%= @user.id %>").attr("id", "buttom-add-<%= @user.id %>");
+
+$("#buttom-profile-friends-<%= @user.id %>").remove();

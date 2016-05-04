@@ -18,4 +18,25 @@ class User < ActiveRecord::Base
   has_many :friendships
   has_many :friends, :through => :friendships,
            :source => :friend
+
+  has_many :receivers
+  has_many :receiver, :through => :receivers,
+           :source => :receive
+
+  has_many :requests
+  has_many :request, :through => :requests,
+           :source => :request
+
+  # def is_friends(id)
+  #   self.friendships.each do |friend|
+  #     if friend.friend_id == id && friend.accepted == true
+  #       return 1
+  #     end
+  #     if friend.friend_id == id && friend.accepted == false
+  #       return 0
+  #     end
+  #   end
+  #   return -1
+  # end
+
 end

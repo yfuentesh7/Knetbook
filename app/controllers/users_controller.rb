@@ -1,7 +1,33 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :update]
+  before_action :set_user, only: [:show, :update, :add_friend]
+  before_action :authenticate_user!
   def index
-      @users = User.all
+    @users = []
+    User.all.each do |user|
+      if !current_user.friends.include?(user) && !current_user.request.include?(user) && !current_user.receiver.include?(user)
+        @users << user
+      end
+    end
+
+      # @friendship = Friendship.new
+
+      # @users_petition = Friendship.where(:accepted=>false, :friend_id=>current_user.id)
+      # @users_friends = Friendship.where(:accepted=>true, :user_id=>current_user.id)
+      # @users_send = Friendship.where(:accepted=>false, :user_id=>current_user.id)
+      #
+      # ids = []
+      # @users_petition.each do |user|
+      #   ids << user.user_id
+      # end
+      # @users_send.each do |user|
+      #   ids << user.friend_id
+      # end
+      # @users_friends.each do |user|
+      #   ids << user.friend_id
+      # end
+      #
+      #
+      # @all_others = ids.length > 0 ? User.where('id NOT IN (?)', ids):User.all
   end
 
   def profile
@@ -9,7 +35,7 @@ class UsersController < ApplicationController
   end
 
   def show
-
+    @comment = Comment.new
   end
 
   def update

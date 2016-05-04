@@ -1,0 +1,3 @@
+$("#buttom-receiver-<%= @user.id %>").children().remove();
+$("#buttom-receiver-<%= @user.id %>").html("<%= t("friends") %> <%= j (link_to t('cancel'), friendships_cancel_path(@user.id), :remote => true, :method => :post) %>");
+$("#buttom-receiver-<%= @user.id %>").attr("id", "buttom-container-friends-<%= @user.id %>")

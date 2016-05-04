@@ -91,11 +91,11 @@ nav a.dropdown-button{
     display: none;
 }
 
-.col.s4.offset-s4,
-.col.s6.offset-s3{
-    background-color: #fff;
-    padding-bottom: 20px;
-}
+/*.col.s4.offset-s4,*/
+/*.col.s6.offset-s3{*/
+    /*background-color: #fff;*/
+    /*padding-bottom: 20px;*/
+/*}*/
 
 .col.s10 .field.input-field{
     margin-top: 0;
@@ -152,5 +152,9 @@ nav a.dropdown-button{
 .right-comment{
     position: relative;
     top: -34px;
+}
+
+.row{
+    margin-bottom: 0px !important;
 }
 

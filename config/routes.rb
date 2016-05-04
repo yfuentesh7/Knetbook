@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  post 'friendships/:id/add' => 'friendships#add', as: :friendships_add
+  post 'friendships/:id/cancel' => 'friendships#cancel', as: :friendships_cancel
+  post 'friendships/:id/accept' => 'friendships#accept', as: :friendships_accept
+  resources :friendships
+
   post 'posts/:id/toggle_like' => 'posts#toggle_like', as: :post_toggle_like
   resources :posts
   resources :comments

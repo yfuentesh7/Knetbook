@@ -1,21 +1,66 @@
 <div class="row">
   <div class="col s8 offset-s2">
     <div id="tab-publications" class="col s12">
-      <% user.posts.each do |post| %>
+      <% current_user.posts.each do |post| %>
           <div class="row">
             <div class="card">
+              <div class="card-content">
+                <div class="row">
+                  <div class="col s2">
+                    <%= image_tag  post.user.avatar.url(:medium), class:"avatar-post" %>
+                  </div>
+                  <div class="col s10">
+                    <%= link_to post.user.name + " " + post.user.last_name, post.user, :method => :get %>
+                  </div>
+                  <div class="col s10">
+                    <%= post.content %>
+                  </div>
+                </div>
+              </div>
               <% if post.avatar %>
                   <div class="card-image">
-                    <%= image_tag post.avatar(:medium), class: "avatar-profile" %>
-                    <span class="card-title"><%= post.user.name %></span>
+                    <%= image_tag post.avatar.url(:medium), class: "avatar-profile" %>
                   </div>
               <% end %>
-              <div class="card-content">
-                <%= post.content %>
-              </div>
               <div class="card-action">
-                <a href="#">This is a link</a>
+                <label><%= post.comments.length %> comment</label>
+                <label id="likes-<%= post.id %>"><%= post.likers_count %></label><span class="icon-color-grey"> likes</span>
+                <%= link_to post_toggle_like_path(post), :method => :post, :class => "right", :remote => true do %>
+                    <i id="hand-icon-<%= post.id %>" class="material-icons"><% if current_user.likes?(post) %>thumb_up<% else %>thumb_down<% end %></i>
+                <% end %>
+                <% if current_user.id == post.user.id %>
+                    <%= link_to post, :method => :delete, :class => "right", data: { confirm: 'Are you sure?' } do %>
+                        <i class="material-icons red-text">delete</i>
+                    <% end %>
+                <% end %>
               </div>
+
+
+              <% if post.comments.length > 0 %>
+                  <div class="card-action indigo white-text">
+                    <%= t("Comments") %>
+                  </div>
+                  <div class="card-action">
+                    <% post.comments.each do |comment| %>
+                        <div class="row">
+                          <div class="col s2">
+                            <%= image_tag comment.user.avatar.url(:medium), class: "avatar-profile-comment" %>
+                          </div>
+                          <div class="col s10">
+                            <%= link_to comment.user.name + " " + comment.user.last_name, comment.user, :method => :get %>
+                          </div>
+                          <div class="col s10">
+                            <%= comment.content %>
+                          </div>
+                          <% if current_user.id == comment.user.id %>
+                              <%= link_to comment, :method => :delete, :class => "right right-comment", data: { confirm: 'Are you sure?' } do %>
+                                  <i class="material-icons red-text">delete</i>
+                              <% end %>
+                          <% end %>
+                        </div>
+                    <% end %>
+                  </div>
+              <% end %>
             </div>
           </div>
       <% end %>

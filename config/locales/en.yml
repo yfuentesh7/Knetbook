@@ -80,4 +80,8 @@ en:
   header: "Header"
   wal: "Wall"
   comments: "Comments"
+  add-friends: "Add friend"
+  waiting: "Waiting"
+  cancel: "Cancel"
+  accept: "Accept"
 
