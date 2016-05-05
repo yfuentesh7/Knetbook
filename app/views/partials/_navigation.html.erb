@@ -13,6 +13,7 @@
         </form>
       </li>
       <li><%= link_to t('wal'), root_path, method: :get %></li>
+      <li><%= link_to t('friends'), users_path, method: :get %></li>
       <li>
         <a class="dropdown-button" data-activates="dropdown1">
           <%= image_tag current_user.avatar.url(:medium), class:"avatar-nav" %>
