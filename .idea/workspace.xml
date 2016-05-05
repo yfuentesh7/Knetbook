@@ -2,54 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98d69bc4-6689-43a2-9c67-fb4db671e3d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Bold-594d74a49e307be7cc9e1ee5f1023684e6820cf11bcc968bee590391e1ad5a5a.ttf.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Bold-594d74a49e307be7cc9e1ee5f1023684e6820cf11bcc968bee590391e1ad5a5a.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Bold-8b84b2abc336ee61f48a28a697b6ace2333ea5f1868aa15d5aeb2c7beac6d716.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Bold-a2ca27e10e7111ca13d7b9368c4b55a165ebf24b40ac16ec715cd3881204bb3a.eot.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Bold-a2ca27e10e7111ca13d7b9368c4b55a165ebf24b40ac16ec715cd3881204bb3a.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Bold-e7cbaf29c3812b80577cb845b5d359486242338f25620ba65260e265464fe359.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Light-2517b97e2c0e1e6c8ceb9dd007015f897926bc504154137281eec4c1a9f9bdc9.eot.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Light-2517b97e2c0e1e6c8ceb9dd007015f897926bc504154137281eec4c1a9f9bdc9.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Light-2cbb012f1d36c09d3f17100ef2cf8213cbd429d9e519dff536c12ed6f07a0d25.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Light-94a0ac8d73bb60a9cbe27a4fa36669104f6ffa37c8ff2df29313a6c0d3b64a75.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Light-ee4352049603e5960550f55444ad720d8d4ce322c0dcba1afc77de78c430d0d5.ttf.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Light-ee4352049603e5960550f55444ad720d8d4ce322c0dcba1afc77de78c430d0d5.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Medium-1cd5c4b37938d932110ec043ce1cc766d18cacf7a4e7cffa6a539855d5bdc08d.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Medium-6e2ec5c5f89e4ce302bb93b46cb7cc336236501de17348e284878914c5e0e723.ttf.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Medium-6e2ec5c5f89e4ce302bb93b46cb7cc336236501de17348e284878914c5e0e723.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Medium-714646396932c3ed852f6946b0149ad7fe3eaca63eb0f507abd4742afa3f1ac1.eot.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Medium-714646396932c3ed852f6946b0149ad7fe3eaca63eb0f507abd4742afa3f1ac1.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Medium-72841a4c4171b13ab1edf2c8f8046f0958f2ff608ce4e0d568dd5c6319f8a933.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Regular-2cd6b07b7855716761250290ce3cf447ccc98e793e484294d3fa8ccbb55b016a.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Regular-bde8a188e37aa936b167aecc5e5a3da40262f6e51fd54c584f2cf2b6b99d96ca.ttf.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Regular-bde8a188e37aa936b167aecc5e5a3da40262f6e51fd54c584f2cf2b6b99d96ca.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Regular-cbb656ad18b9fa7d67c2d6e67372be1bc5924f9ad9a708619a31597de23ce8c0.eot.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Regular-cbb656ad18b9fa7d67c2d6e67372be1bc5924f9ad9a708619a31597de23ce8c0.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Thin-ae65b047fa4032f18a40480a93d1aae6707a756e7b3bb5f060467cd1f59b1625.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Thin-db1d464343bf795307bc90da83d65b93c841fb20f38662f92f1e5e2c5a1d2ec5.ttf.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Thin-db1d464343bf795307bc90da83d65b93c841fb20f38662f92f1e5e2c5a1d2ec5.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Thin-ec8252b3a3f3a07433ad90409b707abd59b88f74dae0878ea97dd4d5357ea5ae.eot.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Thin-ec8252b3a3f3a07433ad90409b707abd59b88f74dae0878ea97dd4d5357ea5ae.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/roboto/Roboto-Thin-fbcf22e622baa9226f9f2dcd2ce4975c9babc01a52eaf9397557a97cdebd7e40.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-85fda9ebfd9900343ac871bdf4bc18c92e32e9b4fe1f7dd5a7026f945fff5a59.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-d59c4cdfdb39c6c2fbaac4ba81e32a65609fb7b90cefe1bd5ea65068472bc500.css.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/missing-3fd2eee85d7b50ba4fbddf61dbb14a3c67d5a9f336baac6b71091e73b838af12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/.sprockets-manifest-291e22369b778522b7c3a4a39cf80343.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-85fda9ebfd9900343ac871bdf4bc18c92e32e9b4fe1f7dd5a7026f945fff5a59.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-d59c4cdfdb39c6c2fbaac4ba81e32a65609fb7b90cefe1bd5ea65068472bc500.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/comments.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/friendships.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/home.coffee" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/comments.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/friendships.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/posts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/users.scss" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/materialize.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/materialize.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/KnetBook.iml" afterPath="$PROJECT_DIR$/.idea/KnetBook.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Production__KnetBook.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__KnetBook.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="KnetBook.iws" />
@@ -126,7 +79,6 @@
         <option value="$PROJECT_DIR$/app/models/receiver.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/request.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/friendships_controller.rb" />
@@ -142,6 +94,7 @@
         <option value="$PROJECT_DIR$/app/views/users/_list_publications.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -205,7 +158,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -219,7 +176,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KnetBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="KnetBook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -521,7 +500,13 @@
       <option name="project" value="LOCAL" />
       <updated>1462461909486</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Clear assets files">
+      <created>1462464340035</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1462464340035</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -557,7 +542,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20227273" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45254236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45254236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -618,7 +603,8 @@
     <MESSAGE value="It added that users can delete their comments and publications." />
     <MESSAGE value="Users can add and delete friends" />
     <MESSAGE value="Database config to Heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database config to Heroku" />
+    <MESSAGE value="Clear assets files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clear assets files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -792,13 +778,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20408164" vertical-offset="0" max-vertical-offset="294">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22346368" vertical-offset="0" max-vertical-offset="537">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -990,6 +969,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.6530613" vertical-offset="309" max-vertical-offset="885">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22346368" vertical-offset="0" max-vertical-offset="537">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
           <folding />
         </state>
       </provider>
